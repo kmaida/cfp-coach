@@ -15,9 +15,20 @@ The skill supports six kinds of work:
 
 You control the final proposal. The skill doesn't submit or publish anything without your explicit instruction.
 
-## Get started
+## Installation
 
-Place the `cfp-coach` folder in your agent's skills directory. Your agent must support skills in the `SKILL.md` format and have file access to read the supporting references. Current conference research also needs web access.
+With Node.js and npm installed, run these commands in your terminal:
+
+```sh
+npx skills add kmaida/cfp-coach --skill cfp-coach
+npx skills add kmaida/deslop-skills --skill deslop-writing
+```
+
+The second command installs the strongly recommended writing skill. Follow the prompts to choose your agent. The default installation applies to the current project; add `--global` to each command to install for your user account across projects. See the [skills CLI documentation](https://github.com/vercel-labs/skills) for installation options.
+
+For manual installation, place the `cfp-coach` folder in your agent's skills directory. Your agent needs file access to read the supporting references. Current conference research also needs web access.
+
+## Get started
 
 Ask for the work you need:
 

@@ -4,7 +4,16 @@ The core consists of `SKILL.md`, this file, `speaker-profile-template.md`, `refe
 
 ## Fresh installation
 
-Place the extracted `cfp-coach` folder in your agent's skills directory. We strongly recommend installing [`deslop-writing`](https://github.com/kmaida/deslop-skills) for proposal writing and edits. The coach uses it when available, subject to your instructions and profile. It can use built-in writing defaults when the skill is unavailable, unless your profile makes the dependency mandatory. With no local configuration, the skill uses the blank template and asks only for information needed for the current request. The bundled public AI research is optional historical evidence; a speaker in another domain should use relevant sources.
+With Node.js and npm installed, run:
+
+```sh
+npx skills add kmaida/cfp-coach --skill cfp-coach
+npx skills add kmaida/deslop-skills --skill deslop-writing
+```
+
+Follow the prompts to choose your agent. Installation defaults to the current project; add `--global` to each command for installation across projects. The second command installs the recommended writing skill. See the [skills CLI documentation](https://github.com/vercel-labs/skills) for more options. Use these commands for a fresh installation; follow the update instructions in this file to preserve existing personalization.
+
+For manual installation, place the extracted `cfp-coach` folder in your agent's skills directory. We strongly recommend installing [`deslop-writing`](https://github.com/kmaida/deslop-skills) for proposal writing and edits. The coach uses it when available, subject to your instructions and profile. It can use built-in writing defaults when the skill is unavailable, unless your profile makes the dependency mandatory. With no local configuration, the skill uses the blank template and asks only for information needed for the current request. The bundled public AI research is optional historical evidence; a speaker in another domain should use relevant sources.
 
 To save personalization, copy `speaker-profile-template.md` to `profiles/<speaker-id>/profile.md` and fill in known facts. Add supporting files beside it. To choose a default, create `local-config.md` containing `Default profile: profiles/<speaker-id>/profile.md`. You can instead explicitly name a speaker or profile path in a request; that selection overrides the default and persists for the session. An unresolved explicit selection never falls back to somebody else's profile.
 
