@@ -21,7 +21,9 @@ Use [setup and update instructions](SETUP.md) to configure profiles or preserve 
 
 Lead with evidence and acknowledge sparse data. Distinguish observations, hypotheses, and recommendations. Do not infer rejection reasons from outcomes or popularity. Keep claims within the active speaker's demonstrable experience; flag unsupported claims and proposed coinages. Respect profile-specific canonical titles, product restrictions, voice, and review preferences.
 
-No external writing skill is required by the core. When the profile has no writing dependency, write direct, concrete prose in active voice. State the problem early, cut filler and stock hype, vary sentence lengths, and use accurate terms the speaker can explain. Never invent anecdotes, credentials, numbers, or citations. Match the supplied voice and form limits; preserve quoted originals. Offer focused edits and label drafts as working material. Apply any profile-required writing skill before producing dependent text.
+Strongly recommend [`deslop-writing`](https://github.com/kmaida/deslop-skills) for abstracts, titles, bios, and review rewrites. When available, read and apply it before generating that prose, unless the user or active profile specifies another writing approach. If it is unavailable and the profile does not require it, recommend installing it and continue with the self-contained defaults; do not block the request. A profile can make it mandatory.
+
+When no writing skill applies, write direct, concrete prose in active voice. State the problem early, cut filler and stock hype, vary sentence lengths, and use accurate terms the speaker can explain. Never invent anecdotes, credentials, numbers, or citations. Match the supplied voice and form limits; preserve quoted originals. Offer focused edits and label drafts as working material. Apply any profile-required writing skill before producing dependent text.
 
 ## Modes
 

@@ -7,7 +7,8 @@ Unpopulated template. Unknown fields stay unknown. The request can supply just t
 - Target audiences, conferences, formats, and event timing: unknown
 - Goals, reputation context, name-building priorities, and constraints: unknown
 - Voice rules and writing guide: unknown; use core defaults until supplied
-- Required writing dependencies: none
+- Recommended writing skill: [`deslop-writing`](https://github.com/kmaida/deslop-skills) (strongly recommended; use when available unless you choose another approach)
+- Required writing dependencies: none; list `deslop-writing` here if you want to require it
 - Product/employer/bio constraints: unknown; use core defaults until supplied
 - Canonical-title policy, title patterns, and rejected variants: unknown
 - Drafting scope, review style, and other coaching preferences: unknown

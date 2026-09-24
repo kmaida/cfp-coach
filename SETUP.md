@@ -4,7 +4,7 @@ The core consists of `SKILL.md`, this file, `speaker-profile-template.md`, `refe
 
 ## Fresh installation
 
-Place the extracted `cfp-coach` folder in your agent's skills directory. No external writing skill is required by the core. With no local configuration, the skill uses the blank template and asks only for information needed for the current request. The bundled public AI research is optional historical evidence; a speaker in another domain should use relevant sources.
+Place the extracted `cfp-coach` folder in your agent's skills directory. We strongly recommend installing [`deslop-writing`](https://github.com/kmaida/deslop-skills) for proposal writing and edits. The coach uses it when available, subject to your instructions and profile. It can use built-in writing defaults when the skill is unavailable, unless your profile makes the dependency mandatory. With no local configuration, the skill uses the blank template and asks only for information needed for the current request. The bundled public AI research is optional historical evidence; a speaker in another domain should use relevant sources.
 
 To save personalization, copy `speaker-profile-template.md` to `profiles/<speaker-id>/profile.md` and fill in known facts. Add supporting files beside it. To choose a default, create `local-config.md` containing `Default profile: profiles/<speaker-id>/profile.md`. You can instead explicitly name a speaker or profile path in a request; that selection overrides the default and persists for the session. An unresolved explicit selection never falls back to somebody else's profile.
 
